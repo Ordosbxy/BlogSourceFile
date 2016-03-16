@@ -16,6 +16,8 @@ Create a New Repository，用[https://github.com/repositories/new](https://githu
 
 ![](http://7xpzxw.com1.z0.glb.clouddn.com/github%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png)
 
+<!--more-->
+
 ##2.本地git操作
 
 需要安装git for windows，可以从百度的软件中心[http://dlsw.baidu.com/sw-search-sp/soft/4e/30195/Git-2.7.2-32-bit_setup.1457942412.exe](http://dlsw.baidu.com/sw-search-sp/soft/4e/30195/Git-2.7.2-32-bit_setup.1457942412.exe)下载，也可以从github官网下载。
@@ -75,3 +77,7 @@ git pull origin master
 Generating an SSH key:
 
 [https://help.github.com/articles/generating-an-ssh-key/](https://help.github.com/articles/generating-an-ssh-key/)
+
+**附：**
+
+参考：[http://blog.csdn.net/binyao02123202/article/details/20130891](http://blog.csdn.net/binyao02123202/article/details/20130891)
