@@ -10,7 +10,7 @@ categories:
 
 使用Github管理Hexo博客的源文件
 
-##1.创建github仓库
+## 1.创建github仓库
 
 Create a New Repository，用[https://github.com/repositories/new](https://github.com/repositories/new)来创建新仓库，填好名称后Create，之后会出现一些仓库的配置信息。这时候就表示配置好了。不需要用README来初始化仓库。我创建的仓库名称是BlogSourceFile。
 
@@ -18,7 +18,7 @@ Create a New Repository，用[https://github.com/repositories/new](https://githu
 
 <!--more-->
 
-##2.本地git操作
+## 2.本地git操作
 
 需要安装git for windows，可以从百度的软件中心[http://dlsw.baidu.com/sw-search-sp/soft/4e/30195/Git-2.7.2-32-bit_setup.1457942412.exe](http://dlsw.baidu.com/sw-search-sp/soft/4e/30195/Git-2.7.2-32-bit_setup.1457942412.exe)下载，也可以从github官网下载。
 
@@ -72,7 +72,7 @@ git push -u origin master
 git pull origin master
 ```
 
-##3.配置ssh
+## 3.配置ssh
 
 Generating an SSH key:
 
