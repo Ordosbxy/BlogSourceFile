@@ -27,6 +27,8 @@ Oracle 11g的新特性闪回操作
 
 下面会分别介绍这些操作。在介绍这些操作之前先看下闪回特性是否开启。
 
+<!--more-->
+
 ## 检查闪回特性是否启用
 
 **参考资料：**
@@ -340,11 +342,11 @@ SQL> select * from "BIN$lpoDEIX2SSGAQt9TL3gUTA==$0";
         ID
 ----------
          1
-         
+
 SQL> flashback table t to before drop;
 
 闪回完成。
-         
+
 SQL> select * from t;
 
         ID
@@ -444,4 +446,3 @@ SQL> select blocks from user_segments where segment_name='BIN$kMskKvD5SJqmwaC5WD
 开启闪回数据库功能之后，会在SGA中开辟内存Flashback buffer，会记录buffer cache中的部分改变然后后台恢复写入进程RVWR将记录写入闪回日志Flashback logs中。FBDA进程（Flashback Data Archive ）则会将Flashback logs进行归档。
 
 这个过程和重做日志非常非常的类似。
-
