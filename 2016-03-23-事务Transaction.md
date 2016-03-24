@@ -10,9 +10,11 @@ categories:
 ---
 参考资料：
 
-[Transactions](http://docs.oracle.com/cd/E11882_01/server.112/e40540/transact.htm#CNCPT117)
+[Transactions](http://docs.oracle.com/cd/E11882_01/server.112/e40540/transact.htm)
 
 [关于Oracle事务的总结](http://blog.csdn.net/junmail/article/details/5556561)
+
+---
 
 ## 什么是事务？
 
@@ -34,6 +36,8 @@ categories:
   - redo日志--提交的事务被永久的记录到redo日志中。
 
 
+<!--more-->
+
 
 ## 数据库事务的开始和结束
 
@@ -45,7 +49,6 @@ categories:
 - DDL或DCL语句（自动提交）
 - 用户会话正常结束--commit
 - 系统异常终了--rollback
-
 
 
 ## 并发与数据的读取
@@ -62,7 +65,6 @@ categories:
 - 幻读 --Phantom（虚幻的） reads
 
   > 事务1读取记录时事务2增加了记录并提交，事务1再次读取时可以看到事务2新增的记录。对事物1而言就好像出现了幻觉一样。
-
 
 
 ## 事务的隔离等级
@@ -99,7 +101,6 @@ Oracle的锁定机制
 - Oracle没有锁管理器
 
 - Oracle中锁作为数据块的一种属性存在
-
 
 Oracle和Sql Server锁的区别
 
@@ -171,7 +172,7 @@ SQL> select * from t;
 
 语法：
 
-```
+```sql
 pragma autonomous_transaction
 ```
 
@@ -313,7 +314,6 @@ Oracle选取Commit Point Strength（相当于权重）最大的数据库作为Co
 - 本地redo保证事务失败后的回滚。
 
 - 当上面的工作都成功后，给全局协调进程返回准备就绪的信息，反之，返回失败的信号。
-
 
 **提交阶段commit phase**
 
