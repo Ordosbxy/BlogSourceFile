@@ -65,6 +65,8 @@ IplImage;
 
 可见，IplImage是一个表示图像的结构体：C语言操作OpenCV的数据结构。地位等同于Mat，可以说是历史版本了。
 
+<!--more-->
+
 ### Mat
 
 Mat这个数据结构定义在opencv\build\include\opencv2\core\core.hpp这个文件。
@@ -582,6 +584,4 @@ int main( )
 	return 0;
 }
 ```
-
-
 
