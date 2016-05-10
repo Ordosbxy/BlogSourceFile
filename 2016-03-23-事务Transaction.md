@@ -10,7 +10,7 @@ categories:
 ---
 参考资料：
 
-[Transactions](http://docs.oracle.com/cd/E11882_01/server.112/e40540/transact.htm)
+<a href="http://docs.oracle.com/cd/E11882_01/server.112/e40540/transact.htmhttp://docs.oracle.com/cd/E11882_01/server.112/e40540/transact.htm" rel="nofollow">Transactions</a>
 
 [关于Oracle事务的总结](http://blog.csdn.net/junmail/article/details/5556561)
 
@@ -35,7 +35,6 @@ categories:
 
   - redo日志--提交的事务被永久的记录到redo日志中。
 
-
 <!--more-->
 
 
@@ -49,7 +48,6 @@ categories:
 - DDL或DCL语句（自动提交）
 - 用户会话正常结束--commit
 - 系统异常终了--rollback
-
 
 ## 并发与数据的读取
 
@@ -65,7 +63,6 @@ categories:
 - 幻读 --Phantom（虚幻的） reads
 
   > 事务1读取记录时事务2增加了记录并提交，事务1再次读取时可以看到事务2新增的记录。对事物1而言就好像出现了幻觉一样。
-
 
 ## 事务的隔离等级
 
